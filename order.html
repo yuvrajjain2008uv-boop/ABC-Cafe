@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Cafe - Order Online</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <header>
+        <h1>ABC Cafe</h1>
+        <h2>Fresh Brews & Cozy Vibes</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <section class="order">
+        <h2>Order Your Favourites</h2>
+        <p>Freshly brewed happiness, just a few clicks away!</p>
+    </section>
+
+    <section class="order-section">
+        <h2>Place Your Order</h2>
+
+        <form action="home.html" method="get">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="coffee">Choose Your Coffee</label>
+            <select id="coffee" name="coffee" required>
+                <option value="">Select Coffee</option>
+                <option value="Espresso">Espresso - $60</option>
+                <option value="Cappuccino">Cappuccino - $80</option>
+                <option value="Latte">Latte - $70</option>
+                <option value="Mocha">Mocha - $90</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required>
+
+            <label for="order-type">Order Type</label>
+            <select id="order-type" name="order-type" required>
+                <option value="">Select Order Type</option>
+                <option value="Dine In">Dine In</option>
+                <option value="Takeaway">Takeaway</option>
+            </select>
+
+            <label for="instructions">Special Instructions</label>
+            <textarea id="instructions" name="instructions" rows="3" placeholder="Any special requests?"></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Follow Us</h3>
+
+        <div class="social">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">📸 Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://www.snapchat.com/" target="_blank">👻 Snapchat</a>
+        </div>
+
+        <p>© 2026 ABC Cafe | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

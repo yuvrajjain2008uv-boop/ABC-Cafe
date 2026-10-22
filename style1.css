@@ -1,0 +1,312 @@
+*{
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+header{
+  background-color:#6f4e37;
+  text-align: center;
+  padding: 18px;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+h2{
+  font-size:15px;
+}
+
+nav{
+  background-color: #d9b08c;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+    
+nav a{
+  text-decoration: none;
+  color: #3e2723;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #6f4e37;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover{
+  background-color: #6f4e37;
+  color: white;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hero{
+  background-size: cover;
+  background-position: center;
+  background-image: url(interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.menu{
+  padding: 50px;
+  text-align: center;
+}
+
+.menu h2{
+  color: #6f4e37;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.menu-items{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item{
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 220px;
+  transition: transform 0.3s;
+}
+
+.item:hover{
+  transform: scale(1.05);
+}
+
+.item h3{
+  margin: 0;
+  color: #3e2723;
+}
+
+.item p{
+  color: #555;
+}
+
+/* About Section */
+.about{
+  background-color: #fff3e6;
+  padding: 50px;
+  text-align: center;
+}
+
+.about h2{
+  color: #6f4e37;
+  font-size: large;
+}
+
+.about p{
+  max-width: 600px;
+  margin: auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact{
+  background-color: #f0e5d8;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2{
+  color: #6f4e37;
+  font-size: 2.5em;
+}
+
+form{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button{
+  background-color: #6f4e37;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover{
+  background-color: #3e2723;
+}
+
+footer{
+  background-color: #6f4e37;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h3 {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #d9b08c;
+}
+
+@media(max-width: 780px) {
+
+    header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 350px;
+        font-size: 2em;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu,
+    .about,
+    .contact {
+        padding: 30px 20px;
+    }
+
+    .menu h2,
+    .contact h2 {
+        font-size: 2em;
+    }
+
+    .menu-items {
+        gap: 20px;
+    }
+
+    .item {
+        width: 200px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+
+    header {
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    header h2 {
+        font-size: 13px;
+    }
+
+    nav {
+        gap: 8px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        padding: 6px;
+        font-size: 12px;
+        border-width: 1px;
+    }
+
+    .hero {
+        height: 250px;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu,
+    .about,
+    .contact {
+        padding: 25px 15px;
+    }
+
+    .menu h2,
+    .contact h2 {
+        font-size: 1.7em;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
