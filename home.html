@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>my cafe</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <header>
+        <h1>ABC Cafe</h1>
+        <h2>Fresh Brews & Cozy Vibes</h2>
+    </header>
+
     <nav>
-        <a href="index.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -16,23 +21,58 @@
         <a href="login.html">Log In</a>
     </nav>
 
+  <div class="hero" id="home">
+    Welcome to ABC Cafe
+  </div>
 
-    <div class="vi">
-
-    <video src="home-video.mp4"  muted loop autoplay></video>
-
+  <section class="menu" id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Espresso</h3>
+        <p>Strong & bold coffee shot</p>
+      </div>
+      <div class="item">
+        <h3>Cappuccino</h3>
+        <p>Rich coffee with creamy foam</p>
+      </div>
+      <div class="item">
+        <h3>Latte</h3>
+        <p>Smooth coffee with milk</p>
+      </div>
+      <div class="item">
+        <h3>Mocha</h3>
+        <p>Chocolate flavored coffee delight</p>
+      </div>
     </div>
+  </section>
 
-    <h1 > welcome to ABC cafe </h1><br>
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>ABC Cafe is your cozy corner for freshly brewed coffee, delicious snacks, and warm conversations. 
+    We believe in serving happiness in every cup. Come, relax, and enjoy the aroma of freshly ground beans.</p>
+  </section>
 
-    <h3>
-        At ABC Cafe,We serve more than just coffee ,<br>
-        We Serve happiness in every cup. Come,Relax <br>
-        and enjoy the cozy vibes with us!
-    </h3>
-    
-     <footer>
-    © 2026 ABC Cafe | All Rights Reserved
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+        <h3>Follow Us</h3>
+
+        <div class="social">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">📸 Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://www.snapchat.com/" target="_blank">👻 Snapchat</a>
+        </div>
+
+        <p>© 2026 ABC Cafe | All Rights Reserved</p>
     </footer>
     
 </body>
