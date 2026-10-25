@@ -57,6 +57,20 @@ img{
 
 .price{
     font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.photo a{
+    text-decoration: none;
+    padding: 7px 10px;
+    color: white;
+    background-color: #6f4e37;
+    border-radius: 5px;
+}
+
+.photo a:hover{
+    cursor: pointer;
+    background-color: #3e2723;
 }
 
 nav{
@@ -107,7 +121,6 @@ footer h3 {
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
-    transition: 0.3s;
 }
 
 .social a:hover {

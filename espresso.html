@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <header>
+        <h1>ABC Cafe</h1>
+        <h2>Fresh Brews & Cozy Vibes</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+    </nav>
+
+    <div class="wrap">
+        <div>
+            <img src="Espresso High Strength Professional Flavouring_.jpeg">
+        </div>
+        <form action="confirm.html" method="get">
+            <h2>ABC Cafe - Order</h2>
+
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" name="customer" placeholder="Enter your name" required>
+
+            <label for="mobile no.">Mobile Number :</label>
+            <input type="tel" id="mobile no." name="mobile no." placeholder="Enter your Mobile Number" pattern="[0-9]{10}" required>
+
+            <label for="coffee">Choose Coffee:</label>
+            <input id="coffee" value="$60 - Espresso" readonly required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="Delevery">Order Type :</label>
+            <select id="order-type" name="order-type" required>
+            <option value="">Select Order Type</option>
+            <option value="Dine In">Dine In</option>
+            <option value="Takeaway">Takeaway</option>
+            </select>
+
+            <label for="notes">Special Instructions:</label>
+            <textarea id="notes" name="notes" placeholder="Any special request"></textarea>
+
+            <button>Place Order</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <h3>Follow Us</h3>
+
+        <div class="social">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">📸 Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://www.snapchat.com/" target="_blank">👻 Snapchat</a>
+        </div>
+
+        <p>© 2026 ABC Cafe | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

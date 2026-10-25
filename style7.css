@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff3e6;
+    color: #3e2723;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color:#6f4e37;
+    text-align: center;
+    padding: 18px;
+    color: aliceblue;
+    font-size: 25px;
+    }
+
+h2{
+    font-size: 15px;
+}
+
+.confirm{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.check{
+    background-color: #e5f5e8;
+    color: #278443;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.confirm h2{
+    color: #6f4e37;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.message{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.info {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.button{
+    display: inline-block;
+    background-color: #6f4e37;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #3e2723;
+}
+
+footer{
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h3 {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.social a:hover {
+    color: #d9b08c;
+}
+    
+@media (max-width: 510px) {
+    header {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .confirm {
+        width: 90%;
+        padding: 25px 18px;
+        margin: 25px auto;
+    }
+
+    .check {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .confirm h2 {
+        font-size: 22px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .social {
+        gap: 10px;
+    }
+
+    .social a {
+        font-size: 13px;
+        padding: 5px;
+    }
+}
